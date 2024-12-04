@@ -59,12 +59,7 @@ const Header = ({ initialDarkMode }: HeaderProps) => {
                         </div>
 
                         <div className="space-y-4 h-[1000px] border-t border-gray-200 px-4 py-6 dark:bg-gradient-to-r from-gray-800 dark:via-gray-900 dark:to-black">
-                            {navigation.pages.map((page) => (
-                                <div key={page.name} className="flow-root">
-                                    <Link href={page.href} className="-m-2 block p-2 font-medium text-gray-900">
-                                    </Link>
-                                </div>
-                            ))}
+                            
                             <div className="w-full ">
                                 <div className="relative rounded-full bg-gray-100 shadow-md dark:bg-gray-700 dark:shadow-md dark:border dark:border-gray-600">
                                     <input
