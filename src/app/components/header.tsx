@@ -66,7 +66,7 @@ const Header = ({ initialDarkMode }: HeaderProps) => {
                                 </div>
                             ))}
                             <div className="w-full ">
-                                <div className="relative rounded-full bg-gray-700 shadow-md dark:bg-gray-700 dark:shadow-md dark:border dark:border-gray-600">
+                                <div className="relative rounded-full bg-gray-100 shadow-md dark:bg-gray-700 dark:shadow-md dark:border dark:border-gray-600">
                                     <input
                                         type="text"
                                         placeholder="Tìm kiếm laptop..."
