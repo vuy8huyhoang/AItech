@@ -69,7 +69,7 @@ const Header = ({ initialDarkMode }: HeaderProps) => {
                                 <div className="relative rounded-full bg-gray-100 shadow-md dark:bg-gray-700 dark:shadow-md dark:border dark:border-gray-600">
                                     <input
                                         type="text"
-                                        placeholder="Tìm kiếm laptop..."
+                                        placeholder="Tìm kiếm các công cụ..."
                                         className="w-full px-4 py-1.5 animate-typing-placeholder text-sm rounded-full focus:outline-none bg-gray-100 dark:bg-gray-700 dark:text-gray-900 "
                                     />
                                     <Link
