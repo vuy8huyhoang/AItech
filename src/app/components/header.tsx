@@ -47,7 +47,7 @@ const Header = ({ initialDarkMode }: HeaderProps) => {
                     className="fixed inset-0 bg-black bg-opacity-25 transition-opacity duration-300"
                 />
                 <div className="fixed inset-0 z-40 flex">
-                    <DialogPanel className="relative flex w-full max-w-xs flex-col overflow-y-auto bg-white pb-12 shadow-xl">
+                    <DialogPanel className="relative flex w-full max-w-xs flex-col overflow-y-auto bg-white shadow-xl">
                         <div className="flex px-4 pb-2 pt-5">
                             <button
                                 type="button"
