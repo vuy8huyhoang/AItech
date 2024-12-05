@@ -10,7 +10,7 @@ const BorderBeam = dynamic(() => import("./ui/border-beam"), { ssr: false });
 
 export default function Banner() {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [fadeIn, setFadeIn] = useState(true); // To control fade effect
+    const [fadeIn, setFadeIn] = useState(true); 
 
     const bannerText = useMemo(() => [
         "Chào mừng đến với Vu AI!",
