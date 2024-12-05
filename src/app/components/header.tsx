@@ -110,7 +110,7 @@ const Header = ({ initialDarkMode }: HeaderProps) => {
                                 width={100}
                             />
                             <span className="ml-2 text-2xl font-bold tracking-wide hidden lg:block">
-                                Tech AI
+                                Vu AI
                             </span>
                         </Link>
 
