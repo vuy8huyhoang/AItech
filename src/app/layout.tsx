@@ -9,20 +9,20 @@ const Footer = dynamic(() => import('./components/footer'));
 import { Inter } from 'next/font/google';
 
 export const metadata = {
-  title: "AI tạo video và hình ảnh",
-  description: "Tạo video và hình ảnh bằng cách nhập lệnh để AI thực hiện.",
+  title: "Tạo video và hình ảnh với AI",
+  description: "Tạo video và hình ảnh với AI 1 cách dễ dàng.",
   openGraph: {
     title: "AI tạo video và hình ảnh",
     description: "Tạo video và hình ảnh bằng cách nhập lệnh để AI thực hiện.",
-    url: "https://yourwebsite.com",
-    image: "https://yourwebsite.com/path/to/image.jpg",
+    url: "https://www.vuai.vn/",
+    image: "https://www.vuai.vn/_next/image?url=%2Flogo-aitech.png&w=128&q=75",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "AI tạo video và hình ảnh",
     description: "Tạo video và hình ảnh bằng cách nhập lệnh để AI thực hiện.",
-    image: "https://yourwebsite.com/path/to/image.jpg",
+    image: "https://www.vuai.vn/_next/image?url=%2Flogo-aitech.png&w=128&q=75",
   },
   icons: {
     icon: "/favicon.ico",

@@ -61,7 +61,7 @@ export default function Banner() {
                         {bannerText[currentIndex]}
                     </h1>
                     <p className="font-medium sm:text-l font-light text-gray-300">
-                        Tận hưởng những chương trình khuyến mãi hấp dẫn dành cho bạn!
+                        Hãy sử dụng các tính năng AI ngay
                     </p>
                     <Link href='/products'>
                         <ShimmerButton
