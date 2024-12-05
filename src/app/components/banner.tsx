@@ -35,7 +35,7 @@ export default function Banner() {
     }, [bannerText.length]);
 
     return (
-        <div className="relative rounded-[50px] bg-gradient-to-r from-blue-400 via-purple-300 to-pink-200 text-white h-[450px] md:h-[500px] overflow-hidden shadow-lg dark:bg-gradient-to-r dark:from-gray-800 dark:via-gray-900 dark:to-black"
+        <div className="relative rounded-[50px] bg-gradient-to-r from-blue-400 via-purple-300 to-pink-200 text-white h-[250px] md:h-[400px] overflow-hidden shadow-lg dark:bg-gradient-to-r dark:from-gray-800 dark:via-gray-900 dark:to-black"
 >
             <div className="absolute inset-0 bg-black bg-opacity-50"></div>
             <BorderBeam size={250} duration={12} delay={9} />
@@ -43,10 +43,10 @@ export default function Banner() {
 
 
                 <div className="text-left space-y-6 pl-10 max-w-lg z-10">
-                    <h1 className=" w-full text-3xl sm:text-4xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500 animate-pulse">
+                    <h1 className=" w-full text-3xl sm:text-3xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500 animate-pulse">
                         {bannerText[currentIndex]}
                     </h1>
-                    <p className="text-lg sm:text-l font-light text-gray-300">
+                    <p className="font-medium sm:text-l font-light text-gray-300">
                         Tận hưởng những chương trình khuyến mãi hấp dẫn dành cho bạn!
                     </p>
                     <Link href='/products'>
@@ -59,7 +59,7 @@ export default function Banner() {
                     </Link>
                 </div>
 
-                <div className="flex justify-center w-[50%] z-10">
+                <div className="flex justify-center w-[30%] z-10 p-4">
                     <Image
                         src={bannerImages[currentIndex]}
                         alt={`Hình ảnh AI ${currentIndex + 1}`}
