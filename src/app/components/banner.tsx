@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useState, useCallback, useMemo } from "react";
 const ShimmerButton = dynamic(() => import("./ui/shimmer-button"), { ssr: false });
 import dynamic from 'next/dynamic';
 
@@ -10,29 +10,29 @@ const BorderBeam = dynamic(() => import("./ui/border-beam"), { ssr: false });
 export default function Banner() {
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    const bannerText = [
+    const bannerText = useMemo(() => [
         "Chào mừng đến với Vũ Store!",
         "Khám phá những chiếc laptop mới nhất!",
         "Giảm giá cực mạnh cho sinh viên!",
         "Dòng laptop gamming hiệu năng cao!"
-    ];
+    ], []);
 
-    const bannerImages = [
+    const bannerImages = useMemo(() => [
         "/banner1 (1).png",
         "/banner1 (2).png",
         "/banner1 (1).png",
         "/banner1 (2).png",
-    ];
+    ], []);
 
-    const nextText = () => {
+    const nextText = useCallback(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % bannerText.length);
-    };
+    }, [bannerText.length]);
 
-    const prevText = () => {
+    const prevText = useCallback(() => {
         setCurrentIndex(
             (prevIndex) => (prevIndex - 1 + bannerText.length) % bannerText.length
         );
-    };
+    }, [bannerText.length]);
 
     return (
         <div className="relative rounded-[50px] bg-gradient-to-r from-blue-400 via-purple-300 to-pink-200 text-white h-[450px] md:h-[500px] overflow-hidden shadow-lg dark:bg-gradient-to-r dark:from-gray-800 dark:via-gray-900 dark:to-black"
@@ -46,7 +46,7 @@ export default function Banner() {
                     <h1 className=" w-full text-3xl sm:text-4xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500 animate-pulse">
                         {bannerText[currentIndex]}
                     </h1>
-                    <p className="text-lg sm:text-xl font-light text-gray-300 animate-slide-up">
+                    <p className="text-lg sm:text-l font-light text-gray-300">
                         Tận hưởng những chương trình khuyến mãi hấp dẫn dành cho bạn!
                     </p>
                     <Link href='/products'>
@@ -62,7 +62,7 @@ export default function Banner() {
                 <div className="flex justify-center w-[50%] z-10">
                     <Image
                         src={bannerImages[currentIndex]}
-                        alt={`Laptop ${currentIndex + 1}`}
+                        alt={`Hình ảnh AI ${currentIndex + 1}`}
                         className="w-[1/2] transform scale-95 hover:scale-100 transition-all duration-300 "
                         width={500}
                         height={500}
