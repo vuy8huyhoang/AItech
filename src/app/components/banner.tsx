@@ -13,17 +13,17 @@ export default function Banner() {
     const [fadeIn, setFadeIn] = useState(true); // To control fade effect
 
     const bannerText = useMemo(() => [
-        "Chào mừng đến với Vũ Store!",
-        "Khám phá những chiếc laptop mới nhất!",
-        "Giảm giá cực mạnh cho sinh viên!",
-        "Dòng laptop gamming hiệu năng cao!"
+        "Chào mừng đến với Vu AI!",
+        "Tạo ảnh bằng AI!",
+        "Tạo video bằng AI!",
+        "Tạo bài hát bằng AI!"
     ], []);
 
     const bannerImages = useMemo(() => [
         "/banner1 (1).png",
         "/banner1 (2).png",
-        "/banner1 (1).png",
-        "/banner1 (2).png",
+        "/banner2 (1).png",
+        "/banner2 (2).png",
     ], []);
 
     const nextText = useCallback(() => {
