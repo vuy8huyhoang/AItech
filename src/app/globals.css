@@ -16,6 +16,7 @@
 
 body {
   font-family: inter, Arial, Helvetica, sans-serif;
+  background: linear-gradient(right, #f3f4f6, #e5e7eb);
 }
 .dark {
   background-color: black !important;
