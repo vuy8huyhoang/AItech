@@ -58,7 +58,7 @@ const Header = ({ initialDarkMode }: HeaderProps) => {
                             </button>
                         </div>
 
-                        <div className="space-y-4 h-screen px-4 py-6 dark:bg-gradient-to-r from-gray-800 dark:via-gray-900 dark:to-black">
+                        <div className="space-y-3 h-screen px-4 py-6 dark:bg-gradient-to-r from-gray-800 dark:via-gray-900 dark:to-black">
                             
                             <div className="w-full ">
                                 <div className="relative rounded-full bg-gray-100 shadow-md dark:bg-gray-700 dark:shadow-md dark:border dark:border-gray-600">
