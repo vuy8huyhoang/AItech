@@ -72,8 +72,8 @@ export default function RootLayout({
       <body
         className={inter.className}
       >
+
           <Header initialDarkMode={initialDarkMode} />
-          
           {children}
 
           <Footer />
