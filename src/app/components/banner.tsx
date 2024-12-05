@@ -10,7 +10,7 @@ const BorderBeam = dynamic(() => import("./ui/border-beam"), { ssr: false });
 
 export default function Banner() {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [fadeIn, setFadeIn] = useState(true); 
+    const [fadeIn, setFadeIn] = useState(true);
 
     const bannerText = useMemo(() => [
         "Chào mừng đến với Vu AI!",
@@ -27,26 +27,26 @@ export default function Banner() {
     ], []);
 
     const nextText = useCallback(() => {
-        setFadeIn(false); 
+        setFadeIn(false);
         setTimeout(() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % bannerText.length);
-            setFadeIn(true); 
-        }, 200); 
+            setFadeIn(true);
+        }, 200);
     }, [bannerText.length]);
 
     const prevText = useCallback(() => {
-        setFadeIn(false); 
+        setFadeIn(false);
         setTimeout(() => {
             setCurrentIndex(
                 (prevIndex) => (prevIndex - 1 + bannerText.length) % bannerText.length
             );
-            setFadeIn(true); 
-        }, 200); 
+            setFadeIn(true);
+        }, 200);
     }, [bannerText.length]);
 
     useEffect(() => {
-        const interval = setInterval(nextText, 2000);
-        return () => clearInterval(interval); 
+        const interval = setInterval(nextText, 2500);
+        return () => clearInterval(interval);
     }, [nextText]);
 
     return (
