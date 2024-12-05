@@ -64,8 +64,8 @@ export default function Banner() {
                         src={bannerImages[currentIndex]}
                         alt={`Hình ảnh AI ${currentIndex + 1}`}
                         className="w-[1/2] transform scale-95 hover:scale-100 transition-all duration-300 "
-                        width={500}
-                        height={500}
+                        width={300}
+                        height={300}
                         priority
                     />
                 </div>
