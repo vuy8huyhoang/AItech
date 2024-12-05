@@ -36,7 +36,7 @@ export default function Banner() {
     }, [bannerText.length]);
 
     return (
-        <div className="relative rounded-[50px] bg-gradient-to-r from-blue-400 via-purple-300 to-pink-200 text-white h-[350px] md:h-[400px] lg:h-[400px] overflow-hidden shadow-lg dark:bg-gradient-to-r dark:from-gray-800 dark:via-gray-900 dark:to-black">
+        <div className="relative rounded-[50px] bg-gradient-to-r from-blue-400 via-purple-300 to-pink-200 text-white h-[250px] md:h-[400px] lg:h-[400px] overflow-hidden shadow-lg dark:bg-gradient-to-r dark:from-gray-800 dark:via-gray-900 dark:to-black">
             <div className="absolute inset-0 bg-black bg-opacity-50"></div>
             <BorderBeam size={250} duration={12} delay={9} />
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-6 md:px-8 flex flex-col sm:flex-row items-center justify-between w-full space-y-6 sm:space-y-0 sm:space-x-6">
@@ -64,7 +64,7 @@ export default function Banner() {
                     <Image
                         src={bannerImages[currentIndex]}
                         alt={`Hình ảnh AI ${currentIndex + 1}`}
-                        className="w-[80%] sm:w-[70%] md:w-[50%] transform scale-95 hover:scale-100 transition-all duration-300"
+                        className="w-[70%] sm:w-[70%] md:w-[50%] transform scale-95 hover:scale-100 transition-all duration-300"
                         width={300}
                         height={300}
                         priority
