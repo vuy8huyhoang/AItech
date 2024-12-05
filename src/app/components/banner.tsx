@@ -60,6 +60,7 @@ export default function Banner() {
 
                 <div className="flex justify-center w-[50%] z-10">
                     <Image
+                        priority
                         src={bannerImages[currentIndex]}
                         alt={`Laptop ${currentIndex + 1}`}
                         className="w-[1/2] transform scale-95 hover:scale-100 transition-all duration-300 "
