@@ -70,7 +70,7 @@ export default function RootLayout({
         <link rel="icon" href={metadata.icons.android} sizes="192x192" type="image/png" />
       </Head>
       <body
-        className={inter.className}
+        className={`${ inter.className }`}
       >
 
           <Header initialDarkMode={initialDarkMode} />
