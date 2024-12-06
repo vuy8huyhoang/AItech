@@ -14,7 +14,7 @@ export const metadata = {
   openGraph: {
     title: "AI tạo video và hình ảnh",
     description: "Tạo video và hình ảnh bằng cách nhập lệnh để AI thực hiện.",
-    url: "https://www.vuai.vn/_next/image?url=%2Flogo-aitech.png&w=128&q=75",
+    url: process.env.URL_WEB||"https://www.vuai.vn",
     image: "/logo-aitech.png",
     type: "website",
   },
