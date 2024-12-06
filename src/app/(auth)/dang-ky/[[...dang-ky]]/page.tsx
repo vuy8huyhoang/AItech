@@ -16,7 +16,7 @@ export default function Dangky() {
                         }}
                         placeholder="blur"
                         blurDataURL="/anh-web-vuai.png"  // Thay đổi với URL ảnh mờ nếu có
-                        priority
+                        
                     />
                 </div>
 
