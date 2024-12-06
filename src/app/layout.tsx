@@ -71,9 +71,11 @@ export default function RootLayout({
         <link rel="icon" href={metadata.icons.android} sizes="192x192" type="image/png" />
       </Head>
       <body
-        className={`${inter.className }`}
+        className={`${inter.className} 
+        `}
       >
-        <div className="relative overflow-hidden">
+        <div className="relative overflow-hidden bg-gray-50 bg-gradient-to-r from-indigo-100 via-indigo-50 to-white
+        dark:bg-gradient-to-r dark:from-gray-800 dark:via-gray-900 dark:to-black">
         <Meteors number={30} />
           <Header initialDarkMode={initialDarkMode} />
           {children}

@@ -50,7 +50,8 @@ export default function Banner() {
     }, [nextText]);
 
     return (
-        <div className="relative rounded-[50px] bg-gradient-to-r from-blue-400 via-purple-300 to-pink-200 text-white h-[230px] md:h-[350px] lg:h-[350px] overflow-hidden shadow-lg dark:bg-gradient-to-r dark:from-gray-800 dark:via-gray-900 dark:to-black">
+        <div className="relative rounded-[50px] bg-gradient-to-r from-blue-400 via-purple-300 to-pink-200 text-white h-[230px] md:h-[350px] lg:h-[350px] overflow-hidden shadow-lg 
+        dark:bg-gradient-to-r dark:from-gray-800 dark:via-gray-900 dark:to-black">
             <div className="absolute inset-0 bg-black bg-opacity-50"></div>
             <BorderBeam size={250} duration={12} delay={9} />
             <div className="absolute  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-6 md:px-8 flex flex-col sm:flex-row items-center justify-between w-full space-y-6 sm:space-y-0 sm:space-x-6">
