@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import Cookies from 'js-cookie';
@@ -75,7 +74,7 @@ export default function RootLayout({
         className={`${inter.className }`}
       >
         <div className="relative overflow-hidden">
-        <Meteors number={100} />
+        <Meteors number={50} />
           <Header initialDarkMode={initialDarkMode} />
           {children}
         </div>
