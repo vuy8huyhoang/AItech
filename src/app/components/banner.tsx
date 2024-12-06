@@ -82,6 +82,8 @@ export default function Banner() {
                         className={`w-[70%] sm:w-[70%] md:w-[50%] transform scale-95 hover:scale-100 transition-all duration-300 ${fadeIn ? 'opacity-100' : 'opacity-0'}`}
                         width={300}
                         height={300}
+                        placeholder="blur"               // Sử dụng ảnh mờ làm placeholder
+                        blurDataURL={bannerImages[currentIndex]}
                         priority
                     />
                 </div>
