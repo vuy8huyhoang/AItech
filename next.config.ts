@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'www.vuai.vn',
         port: '',
-        pathname: '/public/img/**',
+        pathname: '/assets/img/**',
       },
     ],
   },
