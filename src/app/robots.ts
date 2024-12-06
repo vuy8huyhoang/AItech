@@ -1,4 +1,5 @@
 import type { MetadataRoute } from 'next'
+const SITE_URL = process.env.SITEMAP_URL || 'https://acme.com/sitemap.xml';
 
 export default function robots(): MetadataRoute.Robots {
     return {
@@ -7,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: '/',
             disallow: ['/private/','/admin'],
         },
-        sitemap: process.env.SITEMAP_URL || 'https://acme.com/sitemap.xml',
+        sitemap: SITE_URL,
     }
 }
