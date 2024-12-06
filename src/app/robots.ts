@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next'
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITEMAP_URL || 'https://acme.com/sitemap.xml';
+const SITE_URL = process.env.SITEMAP_URL || 'https://acme.com/sitemap.xml';
 
 export default function robots(): MetadataRoute.Robots {
     return {
