@@ -78,7 +78,7 @@ export default function Banner() {
                     <Image
                         src={bannerImages[currentIndex]}
                         alt={`Hình ảnh nhân vật được tạo từ AI ${currentIndex + 1}`}
-                        layout="intrinsic"
+                        layout="reponsive"
                         className={`w-[70%] sm:w-[70%] md:w-[50%] transform scale-95 hover:scale-100 transition-all duration-300 ${fadeIn ? 'opacity-100' : 'opacity-0'}`}
                         width={300}
                         height={300}
