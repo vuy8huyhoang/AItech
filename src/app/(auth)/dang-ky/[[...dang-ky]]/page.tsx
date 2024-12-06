@@ -21,10 +21,10 @@ export default function Dangky() {
                 </div>
 
                 {/* Bên phải: Form Đăng ký */}
-                <div className="w-full sm:w-[80%] lg:w-[50%] max-w-md p-8 space-y-8 bg-white rounded-2xl lg:rounded-r-2xl shadow-2xl flex flex-col justify-center border border-gray-200">
-                    <h1 className="text-3xl font-bold text-center text-gray-800">Xin chào mừng bạn</h1>
-                    <p className="text-center text-gray-600 mb-4">Đăng ký tài khoản để sử dụng dịch vụ của chúng tôi</p>
-                    <h2 className="text-2xl font-semibold text-center text-gray-800 mb-6">Đăng Ký</h2>
+                <div className="w-full lg:mt-0 sm:w-[80%] lg:w-[50%] max-w-md p-8 space-y-2 lg:space-y-8 bg-white rounded-2xl lg:rounded-bl-none lg:rounded-tl-none lg:rounded-r-2xl shadow-2xl flex flex-col justify-center border border-gray-200">
+                    <h1 className="text-2xl lg:text-3xl font-bold text-center text-gray-800">Xin chào mừng bạn</h1>
+                    <p className="text-center text-l text-gray-600 mb-4">Đăng ký tài khoản để sử dụng dịch vụ của chúng tôi</p>
+                    <h2 className="text-xl font-bold text-center text-gray-800 mb-6">Đăng Ký</h2>
 
                     <form className="space-y-8 ">
                         {/* Email */}
