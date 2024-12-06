@@ -74,7 +74,7 @@ export default function RootLayout({
         className={`${inter.className }`}
       >
         <div className="relative overflow-hidden">
-        <Meteors number={50} />
+        <Meteors number={30} />
           <Header initialDarkMode={initialDarkMode} />
           {children}
         </div>
