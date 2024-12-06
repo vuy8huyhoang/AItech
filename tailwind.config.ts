@@ -1,7 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-	darkMode: 'class',
+	darkMode: [ 'class'],
 	content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -19,13 +19,14 @@ const config: Config = {
   			'bounce-slow': 'bounce 5s infinite',
   			'text-glow': 'textGlow 1.5s ease-in-out infinite',
   			'text-shake': 'textShake 0.5s ease-in-out',
-  			'typing': 'typing 4s steps(30) 1s forwards',
+  			typing: 'typing 4s steps(30) 1s forwards',
   			'typing-placeholder': 'typing 2.5s steps(30) infinite',
   			'slide-up': 'slideUp 0.5s ease-out',
-  			'marquee': 'marquee 10s linear infinite',
+  			marquee: 'marquee 10s linear infinite',
   			'shimmer-slide': 'shimmer-slide var(--speed) ease-in-out infinite alternate',
   			'spin-around': 'spin-around calc(var(--speed) * 2) infinite linear',
-  			'border-beam': 'border-beam calc(var(--duration)*1s) infinite linear'
+  			'border-beam': 'border-beam calc(var(--duration)*1s) infinite linear',
+  			meteor: 'meteor 5s linear infinite'
   		},
   		keyframes: {
   			textShake: {
@@ -137,6 +138,19 @@ const config: Config = {
   			'border-beam': {
   				'100%': {
   					'offset-distance': '100%'
+  				}
+  			},
+  			meteor: {
+  				'0%': {
+  					transform: 'rotate(215deg) translateX(0)',
+  					opacity: '1'
+  				},
+  				'70%': {
+  					opacity: '1'
+  				},
+  				'100%': {
+  					transform: 'rotate(215deg) translateX(-500px)',
+  					opacity: '0'
   				}
   			}
   		},

@@ -6,6 +6,8 @@ import "./globals.css";
 
 const Header = dynamic(() => import('./components/header'));
 const Footer = dynamic(() => import('./components/footer'));
+const Meteors = dynamic(() => import('./components/ui/meteors'));
+
 import { Inter } from 'next/font/google';
 
 export const metadata = {
@@ -70,12 +72,13 @@ export default function RootLayout({
         <link rel="icon" href={metadata.icons.android} sizes="192x192" type="image/png" />
       </Head>
       <body
-        className={`${ inter.className }`}
+        className={`${inter.className }`}
       >
-
+        <div className="relative overflow-hidden">
+        <Meteors number={100} />
           <Header initialDarkMode={initialDarkMode} />
           {children}
-
+        </div>
           <Footer />
 
       </body>
